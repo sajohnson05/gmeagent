@@ -27,6 +27,7 @@ gmeagent/
 │   ├── faculty-development.md
 │   ├── gme-data.md
 │   ├── strategy-growth.md
+│   ├── program-operations.md
 │
 ├── skills/
 │   ├── medicare-funding.md
@@ -48,15 +49,22 @@ gmeagent/
 │   ├── escalation-framework.md
 │   ├── kpi-framework.md
 │   ├── staffing-model.md
+│   ├── regulatory-calendar.md
+│   ├── affiliation-agreements.md
 │
 ├── flows/
 │   ├── monthly-close.md
 │   ├── accreditation-review.md
 │   ├── medicare-funding.md
 │   ├── request-triage.md
+│   ├── duty-hours-response.md
+│   ├── resident-grievance.md
 │
 ├── validation/
 │   ├── validate-skills.md
+│   ├── validate-accreditation.md
+│   ├── validate-financial.md
+│   ├── validate-operations.md
 │
 ├── claude.md
 ├── README.md
