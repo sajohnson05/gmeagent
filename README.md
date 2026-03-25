@@ -44,11 +44,16 @@ gmeagent/
 │   ├── interaction-map.md
 │   ├── core-skill-matrix.md
 │   ├── implementation-guidance.md
+│   ├── deliverables-and-ownership.md
+│   ├── escalation-framework.md
+│   ├── kpi-framework.md
+│   ├── staffing-model.md
 │
 ├── flows/
 │   ├── monthly-close.md
 │   ├── accreditation-review.md
 │   ├── medicare-funding.md
+│   ├── request-triage.md
 │
 ├── validation/
 │   ├── validate-skills.md
