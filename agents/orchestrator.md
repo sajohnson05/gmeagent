@@ -99,6 +99,7 @@ Do not ignore system files when they are relevant to the request.
   - survey analysis
   - risk indicators
   - reporting structure
+  - alert routing — KPI threshold breaches trigger notification to responsible agent with defined response expectations
 
 - Strategy & Growth Agent
   - new program analysis

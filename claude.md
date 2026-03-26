@@ -41,13 +41,13 @@ For every request:
    - determine scope
    - identify agents required
    - classify complexity (low / medium / high)
-
 3. Check for critical workflows
 4. Assign ownership
 5. Determine escalation level
-6. Evaluate KPI impact (if relevant)
-7. Validate staffing alignment
-8. Deliver structured output
+6. Check regulatory timing against context/regulatory-calendar.md
+7. Evaluate KPI impact (if relevant)
+8. Validate staffing alignment
+9. Deliver structured output
 
 ---
 
