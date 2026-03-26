@@ -1,38 +1,43 @@
 # Duty Hours Violation Response
 
 ## Purpose
-Ensure all duty hours violations are identified, documented, and resolved in compliance with ACGME standards.
+Ensure all duty hours violations are handled in compliance with ACGME standards.
 
-## Steps
+---
+
+## Workflow
 
 1. Detection
-- Triggered by system or manual report
+- Violation identified via system or report
 
-2. Program Review
+2. Immediate Notification
 - Program Director notified
-- Initial review completed
+- Program Operations logs violation
 
-3. Documentation
-- Root cause identified
-- Violation logged
+3. Review
+- Determine severity and frequency
+- Identify root cause
 
 4. Corrective Action
-- Schedule adjustments or workload changes
-- Resident discussion
+- Adjust schedule or workload
+- Resident discussion documented
 
 5. Escalation Check
-- If repeated → escalate to Director of GME
-- If severe → escalate to Associate DIO
+- Repeated or severe → Director of GME
+- Systemic issue → Associate DIO
 
 6. ACGME Reporting Decision
 - Determine if self-report required
 
 7. Closeout
 - Document resolution
-- Track recurrence risk
+- Track recurrence
+
+---
 
 ## Ownership
-- Program Operations: tracking
-- Program Director: action
+
+- Program Operations: tracking and logging
+- Program Director: initial response
 - Accreditation: compliance validation
 - Director of GME: escalation

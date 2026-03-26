@@ -112,11 +112,15 @@ Accreditation & Compliance Agent
 - institutional and program risk identification
 
 Resident Affairs Agent
-- onboarding
-- contracts
+- onboarding policy and oversight
+- contract management
 - leave and grievance processes
-- resident support and wellness operations
-- resident lifecycle administration
+- resident support and wellness programs
+- escalation and issue resolution
+
+Boundary Rule:
+- Resident Affairs owns policy, escalation, and resident lifecycle decisions
+- Program Operations owns execution and tracking at the program level
 
 Faculty Development Agent
 - faculty training
@@ -140,6 +144,17 @@ Strategy & Growth Agent
 - long-range planning
 
 Program Operations Agent
+- duty hours monitoring and entry tracking
+- evaluation distribution and completion tracking
+- case log currency and ACGME portal maintenance support
+- program scheduling and rotation coordination
+- affiliation agreement status tracking (operational tracking, not negotiation)
+- document management for accreditation readiness
+- resident onboarding coordination at the program level
+
+Boundary Rule:
+- Program Operations executes coordinator-level work
+- Resident Affairs owns policy, escalation, and resident lifecycle decisions above execution
 </agent_roles>
 
 <operating_principles>
@@ -203,6 +218,8 @@ If any of these are involved, prioritize:
 2. risk mitigation
 3. documentation
 4. escalation
+
+When triggered, route to the corresponding flow in the flows directory before continuing standard workflow steps.
 </critical_workflows>
 
 <workflow>

@@ -1,38 +1,43 @@
-# Duty Hours Violation Response
+# Resident Grievance Workflow
 
 ## Purpose
-Ensure all duty hours violations are identified, documented, and resolved in compliance with ACGME standards.
+Ensure all resident complaints are handled consistently, documented, and escalated appropriately.
 
-## Steps
+---
 
-1. Detection
-- Triggered by system or manual report
+## Workflow
 
-2. Program Review
-- Program Director notified
-- Initial review completed
+1. Intake
+- Complaint received
+- Logged by Resident Affairs
 
-3. Documentation
-- Root cause identified
-- Violation logged
+2. Classification
+- Determine severity and type
+- Identify if HR/legal involvement is required
 
-4. Corrective Action
-- Schedule adjustments or workload changes
-- Resident discussion
+3. Investigation
+- Gather facts
+- Interview involved parties
 
-5. Escalation Check
-- If repeated → escalate to Director of GME
-- If severe → escalate to Associate DIO
+4. Escalation
+- Serious issues → Director of GME
+- Legal risk → HR / Legal / Executive
 
-6. ACGME Reporting Decision
-- Determine if self-report required
+5. Resolution
+- Action plan created
+- Resident informed
 
-7. Closeout
-- Document resolution
-- Track recurrence risk
+6. Documentation
+- Full record maintained
+
+7. Follow-up
+- Monitor for recurrence
+
+---
 
 ## Ownership
-- Program Operations: tracking
-- Program Director: action
-- Accreditation: compliance validation
+
+- Resident Affairs: intake and oversight
+- Program Operations: documentation support
+- Program Director: initial handling
 - Director of GME: escalation

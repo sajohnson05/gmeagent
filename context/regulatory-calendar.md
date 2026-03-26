@@ -1,33 +1,43 @@
 # Regulatory Calendar
 
 ## Purpose
-Defines all critical deadlines that drive GME operations.
+Defines all key deadlines that drive GME operations and compliance.
 
 ---
 
 ## ACGME
 
-- Annual Data Survey: Oct–Dec
-- Resident/Fellow Survey: Jan–Feb
-- Faculty Survey: Jan–Feb
-- Site Visits: variable
+- Annual Data Survey: October – December
+- Resident/Fellow Survey: January – February
+- Faculty Survey: January – February
+- Site Visits: variable (trigger-based)
 
 ---
 
 ## Medicare
 
-- Cost Report Submission: annually (varies by institution)
+- Cost Report Submission: December 31 (or institution-specific fiscal deadline)
 
 ---
 
-## Institutional
+## Institutional Requirements
 
-- GMEC Meetings: quarterly minimum
-- CCC Reviews: per rotation block
-- Annual Program Review: yearly
+- GMEC Meetings: minimum quarterly
+- CCC Reviews: per academic block
+- Annual Program Evaluation: yearly
+
+---
+
+## Program Operations
+
+- Evaluation completion cycles: per rotation
+- Duty hours monitoring: continuous
+- Case log updates: continuous
 
 ---
 
 ## Design Rule
-Deadlines must trigger workflows automatically.
-No critical deadline should rely on memory.
+
+- Deadlines must trigger workflows
+- No critical deadline should rely on memory
+- All agents must consider timing before producing outputs
