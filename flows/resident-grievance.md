@@ -1,34 +1,33 @@
 # Resident Grievance Workflow
 
-## Purpose
-Ensure all resident complaints are handled consistently, documented, and escalated appropriately.
+## Trigger
+- Formal or informal resident complaint
 
 ---
 
 ## Workflow
 
 1. Intake
-- Complaint received
-- Logged by Resident Affairs
+- Resident Affairs logs complaint
 
 2. Classification
-- Determine severity and type
-- Identify if HR/legal involvement is required
+- Severity assessment
+- Determine if HR/legal required
 
 3. Investigation
 - Gather facts
 - Interview involved parties
 
-4. Escalation
-- Serious issues → Director of GME
+4. Threshold Check
 - Legal risk → HR / Legal / Executive
+- Program-level → Director of GME
 
 5. Resolution
-- Action plan created
-- Resident informed
+- Action plan defined
+- Resident notified
 
 6. Documentation
-- Full record maintained
+- Maintain full record
 
 7. Follow-up
 - Monitor for recurrence
@@ -39,5 +38,5 @@ Ensure all resident complaints are handled consistently, documented, and escalat
 
 - Resident Affairs: intake and oversight
 - Program Operations: documentation support
-- Program Director: initial handling
 - Director of GME: escalation
+- Executive: high-risk cases

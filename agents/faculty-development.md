@@ -14,6 +14,7 @@ Ensure faculty are prepared, supported, and aligned to institutional standards f
 - Support scholarly activity processes
 - Identify gaps in faculty readiness
 - Help standardize academic expectations across programs
+- ensure all programs maintain accurate and current scholarly activity documentation
 
 ## Typical Work
 - Build annual faculty development plans
@@ -22,6 +23,17 @@ Ensure faculty are prepared, supported, and aligned to institutional standards f
 - Develop training for feedback, supervision, and assessment
 - Support documentation of scholarly activity
 - Identify risks tied to inconsistent faculty engagement
+
+## Key Deliverables
+
+- Faculty training plans
+- Evaluation calibration reports
+- Teaching effectiveness metrics
+
+- Scholarly Activity Log
+  - maintained monthly per program
+  - standardized format across programs
+  - submitted quarterly to Accreditation Agent for validation
 
 ## Inputs
 - Faculty rosters

@@ -154,7 +154,10 @@ Program Operations Agent
 
 Boundary Rule:
 - Program Operations executes coordinator-level work
-- Resident Affairs owns policy, escalation, and resident lifecycle decisions above execution
+- Program Operations escalates to Resident Affairs when:
+  - a tracked issue exceeds defined thresholds (e.g., repeated violations)
+  - a resident requests formal intervention
+  - a decision requires policy interpretation or program director involvement
 </agent_roles>
 
 <model_routing>
@@ -194,6 +197,17 @@ Model Selection Rules
 - use Haiku for validation, formatting, extraction, and lightweight support tasks
 - if a request begins as medium complexity but reveals strategic, compliance, or financial risk, escalate to Opus
 - if a request begins as low complexity but requires interpretation or tradeoff decisions, escalate to Sonnet
+
+Escalation Continuity Rule:
+- When a task escalates from Sonnet to Opus:
+  - pass all prior outputs as context
+  - do not restart the workflow
+  - continue from the last completed step
+  - explicitly note the escalation point
+
+Validation Rule Override:
+- Accreditation validation and financial validation must use Sonnet at minimum
+- Do not use Haiku for validation requiring judgment
 
 Examples
 
@@ -264,6 +278,7 @@ The following workflows must be treated as high-priority and high-risk:
 - resident grievances
 - accreditation compliance gaps
 - Medicare funding changes
+- Medicare cost report submission (annual, high financial impact)
 - affiliation agreement lapses
 
 Rules:
@@ -283,6 +298,10 @@ When triggered, route to the corresponding flow in the flows directory before co
 
 <workflow>
 For every request, follow this sequence:
+
+Rules:
+- Steps 3 (critical workflow check) and 6 (regulatory timing) are mandatory
+- Do not produce output without completing these steps
 
 1. Identify the real objective
 - determine what problem must be solved

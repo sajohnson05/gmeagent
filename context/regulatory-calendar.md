@@ -16,7 +16,10 @@ Defines all key deadlines that drive GME operations and compliance.
 
 ## Medicare
 
-- Cost Report Submission: December 31 (or institution-specific fiscal deadline)
+- Cost Report Submission: annual (typically December 31)
+- Preparation Trigger: begin 90 days prior
+- Requires Finance & Medicare Agent ownership
+- Requires human sign-off before submission
 
 ---
 
