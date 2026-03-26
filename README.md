@@ -12,6 +12,22 @@ It is designed to:
 
 ---
 
+## Getting Started
+
+If you are new, start here:
+
+1. Open: `docs/01-Quick-Start-Claude-Desktop.md`
+2. Load `claude.md` into Claude Desktop
+3. Use prompts from: `docs/04-Prompt-Library.md`
+
+Example prompt:
+
+Use the GME system to create a faculty development plan for the next quarter. Include ownership, KPIs, and risks.
+
+This system is designed to be used through prompts, not by manually navigating files.
+
+---
+
 ## Repository Structure
 ```text
 gmeagent/
@@ -59,6 +75,7 @@ gmeagent/
 │   ├── request-triage.md
 │   ├── duty-hours-response.md
 │   ├── resident-grievance.md
+│   ├── affiliation-agreement-lapse.md
 │
 ├── validation/
 │   ├── validate-skills.md
@@ -129,13 +146,12 @@ Ensures outputs are:
 
 ---
 
-## How to Use
+## How to Use (Simple)
 
-1. Load `claude.md` as the core system prompt
-2. Use context files to define structure and constraints
-3. Route work through the orchestrator
-4. Trigger the relevant workflow or agent team
-5. Validate the final output for clarity, ownership, and completeness
+1. Load `claude.md` into Claude
+2. Ask a structured question (use Prompt Library if needed)
+3. Let the system route work automatically
+4. Review output before acting on regulated decisions
 
 ---
 
