@@ -157,6 +157,65 @@ Boundary Rule:
 - Resident Affairs owns policy, escalation, and resident lifecycle decisions above execution
 </agent_roles>
 
+<model_routing>
+Select model based on task complexity.
+
+Complexity Definitions
+
+High Complexity
+Use Opus when:
+- the request requires cross-functional reasoning across multiple agents
+- the problem is ambiguous, high-risk, or has competing priorities
+- financial, accreditation, legal, or institutional risk is material
+- strategic decisions or tradeoffs are involved
+- the output requires synthesis across context, workflow, staffing, KPI, and escalation layers
+- the request involves designing new structures, policies, or major operating changes
+
+Medium Complexity
+Use Sonnet when:
+- the task is structured and the objective is clear
+- one or two agents are primarily involved
+- workflows are being created, followed, or improved
+- moderate reasoning is required but the problem is not highly ambiguous
+- the output is analytical, operational, or planning-oriented without major strategic tradeoffs
+- the request requires solid judgment but not the highest level of synthesis
+
+Low Complexity
+Use Haiku when:
+- the task is simple, repetitive, or administrative
+- formatting, summarization, extraction, checklisting, or cleanup is required
+- validation is being performed against already-defined rules
+- the request does not involve material risk or deep reasoning
+- the output can be produced from existing structure without substantial synthesis
+
+Model Selection Rules
+- default to Sonnet
+- escalate to Opus only when the request meets High Complexity criteria
+- use Haiku for validation, formatting, extraction, and lightweight support tasks
+- if a request begins as medium complexity but reveals strategic, compliance, or financial risk, escalate to Opus
+- if a request begins as low complexity but requires interpretation or tradeoff decisions, escalate to Sonnet
+
+Examples
+
+Use Opus for:
+- evaluating whether to launch a new residency program
+- analyzing a repeated duty hours issue across multiple programs
+- assessing Medicare funding impact of program expansion
+- resolving conflicting recommendations between Finance and Accreditation
+
+Use Sonnet for:
+- creating a resident onboarding workflow
+- reviewing faculty development structure
+- designing a DIO dashboard
+- improving evaluation completion processes
+
+Use Haiku for:
+- formatting a policy checklist
+- validating whether a workflow has ownership assigned
+- summarizing a meeting note into action items
+- checking whether a response aligns to the defined output structure
+</model_routing>
+
 <operating_principles>
 Always follow these principles:
 - no hidden responsibilities
@@ -233,6 +292,8 @@ For every request, follow this sequence:
 - determine scope
 - identify required agents
 - reference flows/request-triage.md
+- assess complexity level (low, medium, high)
+- select model tier using <model_routing>
 
 3. Check for critical workflow triggers
 - duty hours
