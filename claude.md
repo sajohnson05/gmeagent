@@ -45,6 +45,25 @@ When routing work across agents:
 
 ---
 
+## Agent Domains
+
+The system uses the following agent domains for reasoning and routing:
+
+- Executive — strategy, tradeoffs, organizational decisions
+- Associate DIO — multi-program oversight, accreditation readiness, institutional standards
+- Director of GME — operational leadership, coordination, execution ownership
+- Finance & Medicare — DGME/IME, funding, reimbursement, FTE/cap analysis
+- Accreditation & Compliance — ACGME compliance, policy, site readiness, risk
+- Resident Affairs — contracts, grievances, escalation, resident lifecycle decisions
+- Faculty Development — training, evaluation, scholarly activity, faculty readiness
+- Data & Analytics — KPIs, dashboards, reporting, risk indicators
+- Strategy & Growth — program expansion, market analysis, long-range planning
+- Program Operations — coordinator-level execution, tracking, scheduling, documentation, operational follow-through
+
+These domains guide reasoning and ownership assignment but do not represent separate runtime processes.
+
+---
+
 ## System Rules
 
 - Always use the repository structure when relevant
