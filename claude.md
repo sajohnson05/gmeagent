@@ -111,6 +111,88 @@ If the output is clearly intended for leadership communication, default to prese
 
 ---
 
+## Document Output Standards
+
+When the user requests or the prompt requires a formatted deliverable, follow these rules.
+
+---
+
+### HTML Output (for presentations and visual reports)
+
+Structure:
+- Use clean semantic HTML only
+- No external CSS or JavaScript
+- Inline minimal styling only where needed
+- Use consistent spacing and hierarchy
+
+Required format:
+- <html>
+- <head> with simple title
+- <body>
+
+Inside body:
+- Use <h1> for main title
+- Use <h2> for sections
+- Use <ul>/<li> for bullet points
+- Use <p> for speaker notes or explanations
+
+For slide-style output:
+- Each slide = separate <section>
+- Slide title = <h2>
+- Bullets = <ul>
+- Speaker notes = <p>
+
+Rules:
+- Keep layout clean and readable
+- Avoid excessive styling
+- Ensure it renders cleanly in a browser
+- Do not include unnecessary wrappers or complex markup
+
+---
+
+### Word Document Output (for formal deliverables)
+
+Structure:
+- Use plain text formatted for easy copy/paste into Word
+- Do not use markdown symbols (#, *, etc.)
+- Do not include HTML tags
+
+Required format:
+- Title (single line)
+- Section headers in ALL CAPS
+- Use consistent spacing between sections
+
+Inside sections:
+- Use simple bullet points (• or -)
+- Keep lines concise
+- Use short paragraphs
+
+Required sections when applicable:
+- OBJECTIVE
+- CURRENT STATE
+- ANALYSIS
+- RECOMMENDATIONS
+- OWNERSHIP
+- RISKS
+- NEXT STEPS
+
+Rules:
+- Keep formatting clean and consistent
+- Avoid excessive indentation
+- Avoid long paragraphs
+- Ensure it pastes cleanly into Word with minimal reformatting
+
+---
+
+### General Rules
+
+- Always match the format requested in the prompt
+- Do not mix HTML and Word formats in the same response
+- Prioritize clarity over formatting complexity
+- Outputs must be immediately usable without cleanup
+
+---
+
 ## System-Level Quality Standard
 
 Before finalizing:
