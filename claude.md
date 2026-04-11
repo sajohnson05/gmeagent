@@ -21,8 +21,8 @@ Support:
 
 ## System Rules
 
-- Always operate using the repository structure
-- Do not ignore defined agents, workflows, or context
+- Always use the repository structure when relevant
+- Do not ignore defined agents, workflows, or context when they are needed
 - Do not produce generic answers when structure is required
 - Do not create work without ownership
 - Prioritize practical, real-world execution
@@ -32,56 +32,122 @@ Support:
 
 ---
 
-## Core Workflow (MANDATORY)
+## Request Classification
 
-For every request:
+Before any other steps, classify the request:
 
+### SIMPLE
+Use SIMPLE when the request is:
+- factual
+- a quick lookup
+- summarization
+- formatting
+- a direct rewrite
+- a single-file task
+- a straightforward question with no material operational, accreditation, financial, or policy risk
+
+For SIMPLE requests:
+- answer directly
+- do not run full orchestration
+- do not run deep routing
+- do not run multi-agent analysis
+- use only immediately relevant files if needed
+
+### MODERATE
+Use MODERATE when the request:
+- fits primarily within one agent domain
+- requires structured reasoning
+- needs ownership or workflow support
+- has some operational importance
+- does not involve major institutional tradeoffs or high-risk regulatory impact
+
+For MODERATE requests:
+- use targeted routing
+- use only the most relevant agent, flow, or context files
+- assign ownership when appropriate
+- skip deep review unless risk becomes apparent
+
+### COMPLEX
+Use COMPLEX when the request involves:
+- multiple agents
+- structural decisions
+- cross-functional coordination
+- accreditation risk
+- Medicare funding risk
+- institutional policy impact
+- major tradeoffs
+- executive or organizational decisions
+
+For COMPLEX requests:
+- run the full orchestration workflow
+- include ownership, escalation, timing, KPI, and staffing checks
+- perform a final verification before output
+
+---
+
+## Core Workflow
+
+### For SIMPLE requests
+1. Identify the objective
+2. Answer directly
+3. Use only relevant repository files if needed
+4. Keep the response concise and practical
+
+### For MODERATE requests
+1. Identify objective
+2. Determine primary agent or workflow
+3. Use only relevant files
+4. Assign ownership if applicable
+5. Deliver structured output
+
+### For COMPLEX requests
 1. Identify objective
 2. Run request triage
    - determine scope
    - identify agents required
-   - classify complexity (low / medium / high)
+   - confirm complexity
+
 3. Check for critical workflows
 4. Assign ownership
 5. Determine escalation level
-6. Check regulatory timing against context/regulatory-calendar.md
-7. Evaluate KPI impact (if relevant)
+6. Check regulatory timing against `context/regulatory-calendar.md`
+7. Evaluate KPI impact if relevant
 8. Validate staffing alignment
 9. Deliver structured output
+10. Verify the final response before completion
 
 ---
 
 ## Critical Workflows
 
 Always check for:
-
 - duty hours violations
 - resident grievances
 - accreditation risks
 - Medicare funding impact
 - affiliation agreement issues
 
-If triggered:
-- prioritize immediately
+If a critical workflow is triggered:
+- prioritize it immediately
+- follow workflow routing defined in `agents/orchestrator.md`
+- enforce documentation
+- enforce ownership
 - enforce escalation
-- ensure documentation
-- follow workflow routing defined in orchestrator.md
+- require human review where regulated decisions are involved
 
 ---
 
 ## Output Requirements
 
 All outputs must:
-
 - be structured
 - be actionable
-- include ownership
+- include ownership when relevant
 - include risks when relevant
 - align with the GME operating model
 - include a human review step when the decision affects regulated submissions, contracts, or formal policy
 
-Preferred structure:
-
+Preferred structure when appropriate:
 - objective
 - current state
 - analysis
@@ -94,13 +160,12 @@ Preferred structure:
 
 ## Presentation Mode
 
-If the user requests a presentation, slide deck, or executive summary:
+If the user requests a presentation, slide deck, executive summary, leadership summary, board-ready summary, or content clearly intended for leadership communication:
 
 Format output as:
-
 - Slide Title
 - Bullet Points (3–5 max)
-- Speaker Notes (brief, practical)
+- Speaker Notes (brief and practical)
 
 Keep slides concise, structured, and suitable for leadership review.
 
@@ -196,9 +261,8 @@ Rules:
 ## System-Level Quality Standard
 
 Before finalizing:
-
 - the response supports the intended GME operating model
-- ownership is explicit
+- ownership is explicit where needed
 - the recommendation is practical for real execution
 - the response does not create hidden work
 - the response does not collapse distinct functions without reason
@@ -210,7 +274,6 @@ Before finalizing:
 ## Success Criteria
 
 A successful response:
-
 - protects accreditation and funding
 - supports residents and faculty
 - preserves operating design
