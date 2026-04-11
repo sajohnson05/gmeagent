@@ -47,6 +47,17 @@
 
 ---
 
+## Affiliation Agreements
+| Affiliate Name | Agreement Status | Expiration Date | Programs Covered | Risk Level |
+
+## Key Dates (Current Year)
+- Next ACGME annual report due:
+- Medicare cost report deadline:
+- Next internal accreditation review:
+- Board exams / milestone reviews:
+
+---
+
 ## Current Priorities
 
 - Priority 1:
