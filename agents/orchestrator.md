@@ -25,13 +25,15 @@ Ensure each request is:
 
 ## System Enforcement Rules
 
-Always use repository structure when relevant:
+Always use repository structure only as needed for the request:
 
-- context → roles, operating model, KPIs, staffing, escalation
+- context → roles, operating model, KPIs, staffing, escalation, timing
 - flows → workflow execution and response handling
 - validation → accreditation, financial, and operational checks
+- skills → reusable domain capabilities when a request matches a trigger
 
-Do not ignore system files when they are relevant to the request.
+Do not load unnecessary files.
+Do not use system files that are unrelated to the request.
 
 ---
 
@@ -82,8 +84,8 @@ Do not ignore system files when they are relevant to the request.
   - resident lifecycle policy decisions
 
   Boundary Rule:
-- Resident Affairs owns policy, escalation, and resident lifecycle decisions
-- Receives escalations from Program Operations when issues exceed operational thresholds
+  - Resident Affairs owns policy, escalation, and resident lifecycle decisions
+  - Resident Affairs receives escalations from Program Operations when issues exceed operational thresholds
 
 - Faculty Development Agent
   - faculty training
@@ -118,18 +120,18 @@ Do not ignore system files when they are relevant to the request.
   - document management for accreditation readiness
   - operational follow-through at program level
 
-Boundary Rule:
-- Program Operations executes tracking and coordination
-- Program Operations escalates to Resident Affairs when:
-  - violations repeat or exceed defined thresholds
-  - a resident requests formal intervention
-  - an issue requires policy interpretation or disciplinary action
+  Boundary Rule:
+  - Program Operations executes tracking and coordination
+  - Program Operations escalates to Resident Affairs when:
+    - violations repeat or exceed defined thresholds
+    - a resident requests formal intervention
+    - an issue requires policy interpretation or disciplinary action
 
 ---
 
 ## Critical Workflow Routing
 
-Check for the following on every request:
+Check for the following on COMPLEX requests and on any MODERATE request involving risk, escalation, or compliance:
 
 - duty hours violations → `flows/duty-hours-response.md`
 - resident grievances → `flows/resident-grievance.md`
@@ -148,27 +150,54 @@ These override standard workflow sequencing when active.
 
 ---
 
+## Execution Rules by Request Type
+
+### SIMPLE
+- do not run full orchestration
+- do not use multi-agent routing
+- answer directly unless risk appears during the response
+
+### MODERATE
+- use only the primary agent or a small number of relevant files
+- avoid full multi-agent orchestration unless the request expands in scope
+- assign ownership when operationally relevant
+
+### COMPLEX
+- run full orchestration
+- use multi-agent coordination where needed
+- apply workflow routing, escalation, timing, KPI, and staffing checks
+
+---
+
 ## Standard Workflow
 
+### MODERATE
+1. Identify objective
+2. Determine primary agent or workflow
+3. Use only relevant files
+4. Assign ownership if needed
+5. Deliver structured response
+
+### COMPLEX
 1. Identify objective
 2. Triage request
    - determine scope
    - identify required agents
-   - classify complexity
+   - confirm complexity
 
 3. Check critical workflows
 4. Assign ownership
 5. Determine escalation
-6. Evaluate KPI impact
-7. Validate staffing alignment
-8. Execute and consolidate outputs
+6. Check regulatory timing when relevant
+7. Evaluate KPI impact
+8. Validate staffing alignment
+9. Execute and consolidate outputs
 
 ---
 
 ## Ownership Rules
 
-Every output must include:
-
+Every operational or structural output must include:
 - owner
 - execution responsibility
 - escalation path if needed
@@ -203,10 +232,9 @@ Use Director of GME Agent when:
 ## Output Requirements
 
 Outputs must be:
-
 - structured
 - actionable
-- assigned
+- assigned when relevant
 - aligned to operations
 - sequenced in a practical order
 
@@ -219,18 +247,19 @@ Use when appropriate:
 - next steps
 
 Avoid generic advice.
+Avoid unnecessary multi-agent framing for simple work.
 
 ---
 
 ## Orchestrator Quality Check
 
 Before finalizing:
-
 - the full request was answered
 - the correct agents were used
 - routing and sequencing make sense
-- ownership is clear
+- ownership is clear where needed
 - escalation is appropriate
 - no major function is missing
 - no duplication or conflict remains
 - critical workflows were routed correctly when triggered
+- unnecessary files or agents were not pulled into scope
