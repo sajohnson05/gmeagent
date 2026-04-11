@@ -9,8 +9,15 @@
 
 ## Programs
 
-| Program Name | Type | Status | Accreditation | Residents | Notes |
-|-------------|------|--------|---------------|----------|------|
+| Program Name | Type | Status | Accreditation | Residents | FTE Count | Cap Status | Notes |
+|--------------|------|--------|---------------|-----------|-----------|------------|------|
+
+---
+
+## Program Risk Snapshot
+
+| Program | Risk Level | Primary Risk | Notes |
+|---------|-----------|-------------|------|
 
 ---
 
@@ -33,14 +40,22 @@
 ## Residents
 
 - Total residents:
-- Known issues:
-- Grievance trends:
+
+### Active Issues
+
+| Issue Type | Program | Status | Notes |
+|------------|--------|--------|------|
+
+### Trends
+
+- Recurring issue types:
+- High-risk programs:
 
 ---
 
 ## Medicare / Funding
 
-- FTE count:
+- Institutional FTE count:
 - Cap status:
 - Known risks:
 - Recent changes:
@@ -48,16 +63,33 @@
 ---
 
 ## Affiliation Agreements
+
 | Affiliate Name | Agreement Status | Expiration Date | Programs Covered | Risk Level |
-|-----------------|------------------|------------------|-------------------|------------|
+|----------------|------------------|-----------------|------------------|------------|
 
 ---
 
-## Key Dates (Current Year)
-- Next ACGME annual report due:
-- Medicare cost report deadline:
-- Next internal accreditation review:
-- Board exams / milestone reviews:
+## Ownership
+
+- DIO:
+- Associate DIO:
+- Director of GME:
+
+### Key Operational Owners
+
+| Function | Owner |
+|----------|------|
+| Program Operations |
+| Resident Affairs |
+| Faculty Development |
+| Accreditation |
+| Finance / Medicare |
+
+---
+
+## Regulatory Timing
+
+Refer to context/regulatory-calendar.md for all deadlines and submission windows.
 
 ---
 
