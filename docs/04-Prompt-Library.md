@@ -6,7 +6,7 @@ Use these prompts directly. Replace bracketed sections as needed.
 
 ## 1. Faculty Development (Primary Use Case)
 
-### Quarterly Plan
+### Quarterly Plan (Single Prompt)
 Use the GME system to design a faculty development plan for [QX / timeframe].
 
 Include:
@@ -16,49 +16,79 @@ Include:
 - accreditation alignment
 - ownership by role
 
+Output as a Word document format.
+
 ---
 
-### Annual Strategy
-Use the GME system to build a 12-month faculty development strategy.
+### Annual Strategy (Split)
+
+#### Phase 1 — Identify Gaps
+Identify the current gaps in faculty development across programs.
+
+Focus on:
+- training gaps
+- evaluation consistency
+- scholarly activity gaps
+- faculty engagement
+
+---
+
+#### Phase 2 — Build Strategy
+Using the identified gaps, build a 12-month faculty development strategy.
 
 Include:
 - program structure
+- training plan
 - scholarly activity expectations
-- evaluation improvement plan
-- faculty engagement strategy
-- risks and gaps
+- KPIs
+- ownership
+
+Output as a Word document format.
 
 ---
 
-### Scholarly Activity Tracking
-Use the GME system to design a scholarly activity tracking process.
+### Scholarly Activity Tracking (Split)
+
+#### Phase 1 — Define Requirements
+Define the requirements for a scholarly activity tracking system.
+
+Include:
+- required data fields
+- reporting cadence
+- ownership
+
+---
+
+#### Phase 2 — Build Process
+Design the tracking process.
 
 Include:
 - monthly tracking structure
-- required data fields
-- ownership (Program Ops vs Faculty Dev)
-- quarterly validation process with Accreditation
+- Program Ops vs Faculty Dev responsibilities
+- quarterly validation with Accreditation
 - reporting format
+
+Output as a Word document format.
 
 ---
 
 ## 2. Slide Deck Creation (High Value)
 
-### Executive Deck
+### Executive Deck (Single Prompt)
 Use the GME system to create a leadership presentation on:
 
 [topic]
 
 Format as a slide deck:
 - slide title
-- 3–5 bullets per slide
+- 3–5 bullets
 - speaker notes
 
-Keep it concise and executive-level.
+Output as HTML presentation format.
 
 ---
 
-### Convert Existing Work to Slides
+### Convert Existing Work to Slides (Single Prompt)
 Convert the following into a structured slide deck:
 
 [paste content]
@@ -68,10 +98,14 @@ Output:
 - bullets
 - speaker notes
 
+Output as HTML presentation format.
+
 ---
 
-### Strategy Presentation
-Create a 10–12 slide executive presentation for:
+### Strategy Presentation (Split)
+
+#### Phase 1 — Build Content
+Create the content for an executive presentation on:
 
 [initiative]
 
@@ -81,38 +115,62 @@ Include:
 - recommendations
 - ownership
 - risks
-- next steps
+
+---
+
+#### Phase 2 — Convert to Slides
+Convert this into a 10–12 slide executive deck.
+
+Output as HTML presentation format.
 
 ---
 
 ## 3. Accreditation & Compliance
 
-### Readiness Review
-Run a full accreditation readiness review.
+### Readiness Review (Split)
 
-Include:
-- risks by program
+#### Phase 1 — Identify Risks
+Run an accreditation risk assessment.
+
+Identify:
+- top risks by program
 - compliance gaps
-- required actions
-- ownership
-- timeline
 
 ---
 
-### Site Visit Prep
-Prepare for an upcoming site visit.
+#### Phase 2 — Define Actions
+For each risk, provide:
+- required actions
+- owner
+- timeline
+
+Output as a Word document format.
+
+---
+
+### Site Visit Prep (Split)
+
+#### Phase 1 — Identify Requirements
+List all requirements for the upcoming site visit.
+
+---
+
+#### Phase 2 — Build Plan
+Create a preparation plan.
 
 Include:
-- required documentation
-- known risk areas
+- documentation needed
+- risk areas
 - mitigation plan
 - ownership
+
+Output as a Word document format.
 
 ---
 
 ## 4. Operations & Issue Handling
 
-### Resident Issue
+### Resident Issue (Single Prompt)
 Run a resident grievance workflow for:
 
 [issue]
@@ -123,20 +181,32 @@ Include:
 - ownership
 - resolution steps
 
+Output as a Word document format.
+
 ---
 
-### Duty Hours Issue
-Run the duty hours violation workflow.
+### Duty Hours Issue (Split)
 
-Include:
+#### Phase 1 — Root Cause
+Analyze the duty hours issue.
+
+Identify:
 - root cause
-- escalation level
+- patterns
+
+---
+
+#### Phase 2 — Action Plan
+Provide:
 - corrective actions
+- escalation level
 - documentation required
 
+Output as a Word document format.
+
 ---
 
-### Request Triage
+### Request Triage (Single Prompt)
 Run request triage for:
 
 [request]
@@ -151,28 +221,47 @@ Show:
 
 ## 5. Executive / Promotion Prep (Forward-Looking)
 
-### Strategic Plan
-Create a 12-month GME strategic plan.
+### Strategic Plan (Split)
+
+#### Phase 1 — Identify Priorities
+Identify the top priorities for a 12-month GME strategy.
+
+---
+
+#### Phase 2 — Build Plan
+Create the full strategic plan.
 
 Include:
-- priorities
+- initiatives
 - staffing implications
 - KPIs
 - risks
 
+Output as a Word document format.
+
 ---
 
-### Org Structure Review
+### Org Structure Review (Split)
+
+#### Phase 1 — Assess Current State
 Evaluate the current GME structure.
 
-Recommend:
-- changes
+Identify:
 - gaps
-- ownership improvements
+- inefficiencies
 
 ---
 
-### Risk Review
+#### Phase 2 — Recommend Changes
+Provide:
+- recommended structure changes
+- ownership improvements
+
+Output as a Word document format.
+
+---
+
+### Risk Review (Single Prompt)
 Identify top GME risks across:
 - accreditation
 - operations
@@ -180,11 +269,11 @@ Identify top GME risks across:
 
 Include mitigation strategies.
 
+Output as a Word document format.
+
 ---
 
 ## 6. Power Prompts (Best Ones)
-
-Use these when unsure:
 
 ### General
 Use the GME system to solve the following:
@@ -195,6 +284,8 @@ Include:
 - ownership
 - risks
 - next steps
+
+Output as a Word document format if deliverable is formal.
 
 ---
 
@@ -209,3 +300,38 @@ Show:
 - tradeoffs
 - risks
 - recommended path
+
+Output as a Word document format.
+
+---
+
+## 7. Complex Task Pattern (Use When Needed)
+
+For complex or high-risk work, split into phases instead of one large prompt.
+
+### Phase 1 — Identify
+Focus on risks, problems, or scope.
+
+---
+
+### Phase 2 — Solve
+Focus on actions, ownership, and structure.
+
+---
+
+### Phase 3 — Present
+Convert output into:
+- HTML presentation (for slides) OR
+- Word document (for formal deliverables)
+
+---
+
+### When to Use This Pattern
+
+Use for:
+- accreditation reviews
+- strategic planning
+- complex operational issues
+- executive presentations
+
+Do not use for simple or single-step requests.
