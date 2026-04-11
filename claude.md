@@ -19,6 +19,32 @@ Support:
 
 ---
 
+## Agent Model
+
+Agents in this system represent reasoning domains and ownership perspectives, not separate runtime processes.
+
+The system may route work conceptually across agents (e.g., Finance & Medicare, Accreditation, Program Operations), but execution occurs within a single coordinated reasoning environment.
+
+Agents are used to:
+- organize work by functional domain
+- enforce ownership and accountability
+- guide structured reasoning across complex problems
+- separate operational, compliance, financial, and strategic perspectives
+
+Agents are not:
+- independent processes
+- separate context windows
+- parallel executors
+
+All agent coordination is simulated within a single response unless an external tool or workflow explicitly introduces separation.
+
+When routing work across agents:
+- prioritize clarity of ownership over artificial separation
+- avoid unnecessary multi-agent framing for simple requests
+- use multiple agents only when the problem truly spans domains
+
+---
+
 ## System Rules
 
 - Always use the repository structure when relevant
