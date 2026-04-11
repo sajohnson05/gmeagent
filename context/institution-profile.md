@@ -49,6 +49,9 @@
 
 ## Affiliation Agreements
 | Affiliate Name | Agreement Status | Expiration Date | Programs Covered | Risk Level |
+|-----------------|------------------|------------------|-------------------|------------|
+
+---
 
 ## Key Dates (Current Year)
 - Next ACGME annual report due:
