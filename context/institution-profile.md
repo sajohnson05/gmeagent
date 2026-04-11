@@ -16,6 +16,8 @@
 
 ## Program Risk Snapshot
 
+Risk Level: High / Medium / Low
+
 | Program | Risk Level | Primary Risk | Notes |
 |---------|-----------|-------------|------|
 
