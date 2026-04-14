@@ -1,3 +1,71 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+---
+
+## Repository Overview
+
+This is a **markdown-based AI operating system** for a Graduate Medical Education (GME) office. There is no compiled code, no package manager, and no build step. All logic lives in structured `.md` files designed to be loaded into Claude as a system prompt.
+
+## Validation
+
+The only executable in this repository is a structure validator:
+
+```bash
+./validate-skills.sh                     # Validate directory/file structure and required CLAUDE.md sections
+./validate-skills.sh --check-model-routing  # Also validate model routing assumptions
+./validate-skills.sh --quiet             # Suppress passing checks
+```
+
+## Architecture
+
+All requests route through a single orchestration pattern:
+
+```
+User Request → Orchestrator (agents/orchestrator.md)
+    → Triage (flows/request-triage.md)
+    → Critical workflow check (flows/)
+    → Appropriate agent(s) (agents/)
+    → Context evaluation (context/)
+    → Structured output
+```
+
+### Directory Roles
+
+| Directory | Purpose |
+|-----------|---------|
+| `agents/` | Functional role definitions — each file is one agent (orchestrator, director-of-gme, finance-medicare, accreditation-compliance, resident-affairs, faculty-development, program-operations, gme-data, strategy-growth, etc.) |
+| `context/` | Operating environment: staffing model, escalation framework, KPI framework, regulatory calendar, operating rhythm, interaction map |
+| `flows/` | Critical workflow procedures triggered by specific events (duty hours violations, resident grievances, accreditation review, Medicare funding impact, affiliation agreement lapse) |
+| `skills/` | Reusable capability reference files |
+| `validation/` | Lightweight check definitions per domain |
+| `docs/` | User guides: quick start, full setup, use cases, prompt library, executive mode |
+
+### Key File Relationships
+
+- **`agents/orchestrator.md`** is the central router — it references all other agents and all flows
+- **`context/regulatory-calendar.md`** is consulted on every request (step 6 of core workflow)
+- **`context/escalation-framework.md`** defines when work moves up the org chart
+- **`context/kpi-framework.md`** defines metrics thresholds that trigger notifications
+- **`flows/`** files are triggered automatically when critical conditions are detected (not called by name)
+- **`agents/program-operations.md`** owns the highest-volume recurring work; escalates to `agents/resident-affairs.md` when violations exceed defined thresholds
+- **`agents/faculty-development.md`** tracks scholarly activity monthly; `agents/accreditation-compliance.md` validates quarterly
+
+### Boundary Rules
+
+- **Program Operations vs Resident Affairs**: Program Ops handles execution/tracking; Resident Affairs handles escalations, formal complaints, and policy/disciplinary action
+- **Faculty Development vs Accreditation**: Faculty Dev does monthly per-program tracking; Accreditation does quarterly cross-program validation
+- **Data agent** supports all agents — it does not own decisions, only reporting
+
+### Adding or Modifying Agents/Flows
+
+- Each agent file must define: role, responsibilities, inputs, outputs, escalation paths, and interaction with other agents
+- Each flow file must define: trigger conditions, step-by-step procedure, escalation thresholds, and output requirements
+- After any structural change, run `./validate-skills.sh` to confirm the repository passes all checks
+
+---
+
 # Claude System Prompt — GME AI Operating System
 
 ## Role
