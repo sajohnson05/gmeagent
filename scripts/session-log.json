@@ -1,0 +1,38 @@
+{
+  "session": {
+    "id": "",
+    "started": "",
+    "model": "claude-sonnet-4-6",
+    "context_window": 200000
+  },
+  "token_usage": {
+    "system_tokens": 0,
+    "context_file_tokens": 0,
+    "history_tokens": 0,
+    "current_query_tokens": 0,
+    "input_tokens_total": 0,
+    "output_tokens_total": 0,
+    "tasks_run": 0
+  },
+  "agents": [
+    { "name": "Orchestrator", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Executive", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Associate DIO", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Director of GME", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Finance & Medicare", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Accreditation & Compliance", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Resident Affairs", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Faculty Development", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Data & Analytics", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Strategy & Growth", "state": "idle", "task": "", "last_active": "" },
+    { "name": "Program Operations", "state": "idle", "task": "", "last_active": "" }
+  ],
+  "critical_workflows": {
+    "duty_hours": { "status": "clear", "last_checked": "" },
+    "resident_grievance": { "status": "clear", "last_checked": "" },
+    "accreditation_risk": { "status": "clear", "last_checked": "" },
+    "medicare_funding": { "status": "clear", "last_checked": "" },
+    "affiliation_agreement": { "status": "clear", "last_checked": "" }
+  },
+  "log": []
+}
