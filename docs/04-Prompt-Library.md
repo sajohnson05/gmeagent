@@ -102,6 +102,54 @@ Output as HTML presentation format.
 
 ---
 
+### Use the GME system to create a CME-level presentation on:
+
+[TOPIC]
+
+Audience:
+Practicing physicians and faculty in a CME setting.
+
+Target:
+30–45 minute session.
+
+Requirements:
+- Align fully with context/presentation-style.md
+- Focus on real-world behavior, decision-making, and team impact
+- Avoid academic or textbook-style explanations
+- Respect the experience level of attending physicians
+
+Content Structure:
+- Define the concept clearly
+- Show what it looks like in clinical practice
+- Highlight common failure points
+- Provide high-impact behaviors
+- Include 1–2 realistic clinical or operational scenarios
+- End with clear, actionable takeaways
+
+Slide Rules:
+- One idea per slide
+- Maximum 5 bullets per slide
+- No dense text
+- Use contrast framing where appropriate
+
+Speaker Notes:
+- 2–4 sentences per slide
+- Expand behavior with real examples
+- Conversational and practical
+- Do not repeat slide bullets
+
+Output Requirements:
+- HTML presentation format
+- Each slide wrapped in <section>
+- Use <h2>, <ul>, <li>, and <p> structure
+- Clean, minimal styling
+- Readable in a browser
+
+Quality Bar:
+Make this presentation strong enough to be delivered at a regional CME conference.
+
+---
+
 ### Strategy Presentation (Split)
 
 #### Phase 1 — Build Content
